@@ -11,8 +11,7 @@ WORKDIR /tmp/
 RUN mvn -B -s /usr/share/maven/ref/settings-docker.xml package
 
 
-
-FROM openjdk:16-jdk-oraclelinux8
+FROM openjdk:16-jdk-oraclelinux7
 
 RUN mkdir -p /opt/bdo/services/
 
